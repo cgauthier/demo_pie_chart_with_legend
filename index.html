@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo - Overlay Pie Chart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container_row">
+        <div class="layer1">
+            <div class="innerlayer1">
+                <div class="legend legendTitle">Legend</div>
+                <div class="legend legendItem legend_connected">Connected: <span id="value_connected"></span></div>
+                <div class="legend legendItem legend_scheduleddown">Scheduled Down: <span id="value_scheduleddown"></span></div>
+                <div class="legend legendItem legend_unscheduleddown">Unscheduled Down: <span id="value_unscheduleddown"></span></div>
+                <div class="legend legendItem legend_notinsync">Not In Sync: <span id="value_notinsync"></span></div>
+            </div>
+        </div>
+        <div class="layer2">
+            <canvas class="innerlayer2" id="canvas"></canvas>
+        </div>
+    </div>
+  </body>
+</html>

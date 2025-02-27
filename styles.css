@@ -1,0 +1,113 @@
+:root {
+    --size: 400px;
+    --layer_one_size: calc(var(--size) - 20px);
+    --layer_two_size: calc(var(--size) - 10px);
+    --layer_size_circle_overlay: calc(var(--size) - 100px);
+    --connected_color: #005500;
+    --scheduleddown_color: #ffa500;
+    --unscheduleddown_color: #cc0000;
+    --notinsync_color: #000000;
+}
+
+* {
+    font-family: Helvetica, Arial, sans serif;
+    font-size: 1em;
+}
+
+.legend {
+    width: inherit;
+    display: block;
+    background: #ffffff;
+    text-align: left;
+    padding: 5px 0px 5px 40px
+}
+
+.legendTitle {
+    font-size: 1.4em;
+}
+
+.legendItem {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.legend_connected {
+    background-color: var(--connected_color);
+}
+
+.legend_scheduleddown {
+    background-color: var(--scheduleddown_color);
+}
+
+.legend_unscheduleddown {
+    background-color: var(--unscheduleddown_color);
+}
+
+.legend_notinsync {
+    background-color: var(--notinsync_color);
+}
+
+
+body {
+    background-color: #ccccff;
+} 
+
+.container_row {
+    width: var(--size);
+    height: var(--size);
+    background-color: #fff;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0px;
+    margin: auto;
+
+}
+
+.layer1, .layer2{
+    position: absolute;
+    color: #fff;
+}
+
+.layer1 {
+    display: block;
+    background-color: transparent;
+    width: var(--layer_one_size);
+    height: var(--layer_one_size);
+    z-index: 15;
+    display: flex; 
+    justify-content: center;
+    align-items: center;      
+    pointer-events: none;      
+}
+
+.innerlayer1 {
+    width: var(--layer_size_circle_overlay);
+    height: var(--layer_size_circle_overlay);
+    text-align: center;
+    background-color: #99ff99; 
+    border-radius: 50%;  
+    pointer-events: none;   
+    color: #000000;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    border: 3px solid blue;
+}        
+
+.layer2 {
+    display: block;
+    background-color: transparent;
+    width: var(--layer_two_size);
+    height: var(--layer_two_size);
+    z-index: 5;
+}
+
+.innerlayer2 {
+    display: block;
+    width: var(--layer_two_size);
+    height: var(--layer_two_size);
+    background-color: transparent;
+}  
