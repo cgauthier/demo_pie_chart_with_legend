@@ -17,6 +17,6 @@ HTML 5 / JS Pie Chart using Canvas / CSS  calculations and more.
     4) add the legend of the pie chart in the middle (it mimicks a donut chart)
     5) CSS is used for calculations
     6) pull CSS var values to generate to set the canvas width and height and to set colors for data array
-    7) fake a tooltip scheme based on canvas title attribute and the ability to pull color from mouse position
+
     
 Live Demo at URL: http://www.claudegauthier.net/demos/demo_html5_canvas_pie_chart/index.html
