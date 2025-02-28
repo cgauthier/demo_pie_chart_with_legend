@@ -3,10 +3,10 @@
     --layer_one_size: calc(var(--size) - 20px);
     --layer_two_size: calc(var(--size) - 10px);
     --layer_size_circle_overlay: calc(var(--size) - 100px);
-    --connected_color: #005500;
-    --scheduleddown_color: #ffa500;
-    --unscheduleddown_color: #cc0000;
-    --notinsync_color: #000000;
+    --data1_color: #005500;
+    --data2_color: #ffa500;
+    --data3_color: #cc0000;
+    --data4_color: #000000;
 }
 
 * {
@@ -31,20 +31,20 @@
     color: #ffffff;
 }
 
-.legend_connected {
-    background-color: var(--connected_color);
+.legend_data1 {
+    background-color: var(--data1_color);
 }
 
-.legend_scheduleddown {
-    background-color: var(--scheduleddown_color);
+.legend_data2 {
+    background-color: var(--data2_color);
 }
 
-.legend_unscheduleddown {
-    background-color: var(--unscheduleddown_color);
+.legend_data3 {
+    background-color: var(--data3_color);
 }
 
-.legend_notinsync {
-    background-color: var(--notinsync_color);
+.legend_data4 {
+    background-color: var(--data4_color);
 }
 
 

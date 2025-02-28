@@ -20,20 +20,20 @@
 window.onload = init;
 
 let data = [{
-    "id": "connected",
-    "display": "Connected",
+    "id": "data1",
+    "display": "Data 1",
     "value": 20
 }, {
-    "id": "scheduleddown",
-    "display": "Scheduled Down",
+    "id": "data2",
+    "display": "Data 2",
     "value": 1
 }, {
-    "id": "unscheduleddown",
-    "display": "Unscheduled Down",
+    "id": "data3",
+    "display": "Data 3",
     "value": 305
 }, {
-    "id": "notinsync",
-    "display": "Not In Sync",
+    "id": "data4",
+    "display": "Data 4",
     "value": 245
 }];
 
